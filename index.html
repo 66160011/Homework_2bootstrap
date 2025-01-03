@@ -11,10 +11,14 @@
         body {
             font-family: 'Mali', sans-serif;
         }
-        .img-home, .img-info, .col {
+
+        .img-home,
+        .img-info,
+        .col {
             max-width: 100%;
             height: auto;
         }
+
         .grid-info {
             display: flex;
             flex-wrap: wrap;
@@ -27,46 +31,33 @@
     <header class="bg-primary text-white py-3">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="image/DALL·E 2025-01-03 19.40.42 - A creative logo design for Nakhon Sawan, Thailand, featuring a crocodile, a lotus flower, key landmarks such as Wat Kiriwong's golden pagoda, and natu.webp" alt="Nakhon Sawan Logo">
+                <img src="image/DALL·E 2025-01-03 19.40.42 - A creative logo design for Nakhon Sawan, Thailand, featuring a crocodile, a lotus flower, key landmarks such as Wat Kiriwong's golden pagoda, and natu.webp" alt="Nakhon Sawan Logo" class="img-fluid" style="max-height: 50px;">
             </a>
             <h1 class="text-center">สถานที่ท่องเที่ยวจังหวัดนครสวรรค์</h1>
             <div class="d-flex justify-content-center my-3">
-                <input type="text" class="form-control w-50" id="searchInput" placeholder="Search...">
+                <input type="text" class="form-control w-75" id="searchInput" placeholder="Search...">
                 <button class="btn btn-light ms-2" onclick="performSearch()">Search</button>
             </div>
-
-            <script>
-                function performSearch() {
-                    const query = document.getElementById('searchInput').value;
-                    if (query) {
-                        alert(`Searching for: ${query}`);
-                        // Add your search logic here, e.g., redirect to another page:
-                        // window.location.href = `search-results.html?q=${encodeURIComponent(query)}`;
-                    } else {
-                        alert('Please enter a search query.');
-                    }
-                }
-            </script>
-
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item"><a class="nav-link" href="index.html">หน้าหลัก</a></li>
-                            <li class="nav-item"><a class="nav-link" href="info.html">ข้อมูลท่องเที่ยวจังหวัด</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">ติดต่อเรา</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
         </div>
     </header>
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">หน้าหลัก</a></li>
+                    <li class="nav-item"><a class="nav-link" href="info.html">ข้อมูลท่องเที่ยวจังหวัด</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">ติดต่อเรา</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <main class="container my-4">
-        <img class="img-fluid mb-4" src="image/สถานที่ท่องเที่ยว.png" alt="">
+        <img class="img-fluid mb-4" src="image/สถานที่ท่องเที่ยว.png" alt="Nakhon Sawan">
 
         <p>นครสวรรค์ จังหวัดทางตอนล่างของภาคเหนือที่ใหญ่รองลงมาจากเชียงใหม่ ที่นี่เป็นเมืองที่รู้จักในนาม
             “เมืองปากน้ำโพ” ซึ่งมาจากบริเวณที่แม่น้ำปิงและน่านมาบรรจบกัน อันเป็นต้นแม่น้ำเจ้าพระยานั่นเอง นครสวรรค์
@@ -76,13 +67,13 @@
         <section class="mt-4">
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <img class="img-fluid" src="image/info06.jpg" alt="">
+                    <img class="img-fluid" src="image/info06.jpg" alt="Tourist Spot 1">
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <img class="img-fluid" src="image/info07.jpg" alt="">
+                    <img class="img-fluid" src="image/info07.jpg" alt="Tourist Spot 2">
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <img class="img-fluid" src="image/info08.jpg" alt="">
+                    <img class="img-fluid" src="image/info08.jpg" alt="Tourist Spot 3">
                 </div>
             </div>
 
@@ -95,14 +86,14 @@
         </section>
 
         <div class="row mt-4">
-            <div class="col-md-4">
-                <img class="img-fluid" src="image/info09.jpg" alt="">
+            <div class="col-md-4 mb-4">
+                <img class="img-fluid" src="image/info09.jpg" alt="Tourist Spot 4">
             </div>
-            <div class="col-md-4">
-                <img class="img-fluid" src="image/info10.jpg" alt="">
+            <div class="col-md-4 mb-4">
+                <img class="img-fluid" src="image/info10.jpg" alt="Tourist Spot 5">
             </div>
-            <div class="col-md-4">
-                <img class="img-fluid" src="image/info11.jpg" alt="">
+            <div class="col-md-4 mb-4">
+                <img class="img-fluid" src="image/info11.jpg" alt="Tourist Spot 6">
             </div>
         </div>
     </main>
@@ -112,6 +103,19 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function performSearch() {
+            const query = document.getElementById('searchInput').value;
+            if (query) {
+                alert(`Searching for: ${query}`);
+                // Add your search logic here, e.g., redirect to another page:
+                // window.location.href = `search-results.html?q=${encodeURIComponent(query)}`;
+            } else {
+                alert('Please enter a search query.');
+            }
+        }
+    </script>
 </body>
 
 </html>
