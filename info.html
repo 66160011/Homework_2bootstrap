@@ -7,99 +7,13 @@
     <title>hw2 travel</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link
-        href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="CSS/style.css">
-    <style>
-        body {
-            font-family: 'Mali', sans-serif;
-            background-color: #fce4ec;
-            /* Light pink background */
-        }
 
-        header {
-            background-color: #f48fb1;
-            /* Soft pink background */
-            padding: 20px 0;
-        }
-
-        h1 {
-            color: white;
-            font-size: 36px;
-            font-weight: 600;
-        }
-
-        nav .navbar-nav .nav-link {
-            font-size: 18px;
-            font-weight: 500;
-            color: white;
-            transition: color 0.3s ease;
-        }
-
-        nav .navbar-nav .nav-link:hover {
-            color: #f06292;
-            /* Hover effect */
-        }
-
-        .navbar-toggler-icon {
-            background-color: #f48fb1;
-            /* Pink burger icon */
-        }
-
-        .main-content h2 {
-            font-size: 28px;
-            font-weight: 500;
-            color: #f48fb1;
-            margin-bottom: 20px;
-        }
-
-        footer {
-            background-color: #f48fb1;
-            padding: 20px;
-            color: white;
-        }
-
-        footer a {
-            text-decoration: none;
-            color: white;
-            font-weight: 600;
-            transition: color 0.3s ease;
-        }
-
-        footer a:hover {
-            color: #f06292;
-            /* Hover effect */
-        }
-
-        .img-fluid {
-            border-radius: 8px;
-            /* Rounded corners for images */
-        }
-
-        /* Media Queries for Responsiveness */
-        @media (max-width: 767px) {
-            h1 {
-                font-size: 28px;
-            }
-
-            .container {
-                padding: 0 15px;
-            }
-
-            .main-content h2 {
-                font-size: 24px;
-            }
-
-            footer {
-                text-align: center;
-            }
-        }
-    </style>
 </head>
 
 <body>
-
-    <header>
+    <header class="bg-light py-3">
         <div class="container">
             <h1 class="text-center">สถานที่ท่องเที่ยวจังหวัดนครสวรรค์</h1>
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -126,57 +40,108 @@
         </div>
     </header>
 
-    <main class="container py-4">
-        <section class="main-content">
-            <div class="text-center ">
+    <main class="container">
+        <section>
+            <div class="text-center">
                 <h2>ข้อมูลท่องเที่ยวจังหวัด</h2>
             </div>
-            <div class="col-md-6 ">
-                <img class="img-fluid" src="image/info01.jpg" alt="">
-                <article>
-                <div >
-                    <h2>1.บึงบอระเพ็ด</h2>
-                    <p>สถานที่ท่องเที่ยวนครสวรรค์ชื่อดังที่พลาดไม่ได้ บึงบอระเพ็ด
-                        เป็นบึงทะเลสาบน้ำจืดที่ใหญ่ที่สุดในประเทศไทย...</p>
+            <!-- สถานที่ 1 -->
+            <div class="row">
+                <div class="col">
+                    <img class="img-fluid" src="image/info01.jpg" alt="บึงบอระเพ็ด">
+                    <article>
+                        <div>
+                            <h2>1. บึงบอระเพ็ด</h2>
+                            <p>สำหรับนักท่องเที่ยวเที่ยวแล้ว
+                                สามารถมาชิลเที่ยวที่นี่ได้ด้วยการล่องเรือชมความงามของดอกบัวสายพันธุ์ต่างๆ
+                                และชมนกนานาชนิด
+                                อีกทั้งที่นี่ยังมี อาคารแสดงพันธุ์สัตว์น้ำ บึงบอระเพ็ด ให้เราได้สัมผัสโลกใต้น้ำ
+                                อุโมงค์ปลายาวกว่า 24 เมตร และพันธุ์ปลากว่า 100 ชนิดอีกด้วย</p>
+                        </div>
+                    </article>
+                    <img class="img-fluid" src="image/info02.jpg" alt="พาสาน">
+                    <article>
+                        <div>
+                            <h2>2. พาสาน</h2>
+                            <p> เป็นอีกหนึ่งจุดน่าเที่ยวที่พลาดไม่ได้ถ้าได้มาเที่ยวนครสวรรค์ ที่นี่เป็นอาคารสุดล้ำ
+                                ต้นแม่น้ำเจ้าพระยา ที่เราจะเห็นได้ถึงความอลังการทางสถาปัตยกรรมค่ะ
+                                ที่นี่เป็นแหล่งการเรียนรู้ประวัติศาสตร์ วัฒนธรรม ประเพณี การท่องเที่ยว
+                                และมีลานประดิษฐานองค์เจ้าแม่กวนอิมให้นักท่องเที่ยวได้ไปสักการะ</p>
+                        </div>
+                    </article>
+                    <img class="img-fluid" src="image/info03.jpg" alt="เขาหน่อ เขาแก้ว">
+                    <article>
+                        <div>
+                            <h2>3. เขาหน่อ เขาแก้ว</h2>
+                            <p>ขึ้นไปบนภูเขาหินปูนที่ลาดชัน โดยเขาหน่อ แบ่งออกเป็น 2 ส่วน เขาพระพุทธบาท และ
+                                เขานางพันธุรัต สำหรับใครที่จะไปสักการะ รอยพระพุทธบาท ก็สามารถขึ้นเขาหน่อได้ทาง
+                                เขาพระพุทธบาท โดยทางขึ้นค่อนข้างสูงและชัน บันไดกว่า 700 ขั้น บางช่วงชันถึง 90
+                                องศาเลยทีเดียว เหมือนกับการไต่หน้าผาจริงๆ เลยทีเดียวค่ะ แต่บอกเลยว่า
+                                วิวด้านบนเขานั้นอลังการสุดๆ</p>
+                        </div>
+                    </article>
+                    <img class="img-fluid" src="image/info04.jpg" alt="วัดคีรีวงศ์">
+                    <article>
+                        <div>
+                            <h2>4. วัดคีรีวงศ์</h2>
+                            <p> ภายในวัดมีศาสนสถานสำคัญมากมายทั้ง พระอุโบสถ สมเด็จพระพุทธโคดมจำลอง ศาลาพุทธานุภาพ
+                                วิหารหลวงพ่อโต และ มหาเจดีย์พระจุฬามณีเจดีย์ โดยภายในมีทั้งหมด 4 ชั้น ชั้นที่ 1
+                                จุดสำหรับจุดธูปเทียนบูชา ชั้นที่ 2
+                                มีรูปหล่อขนาดเท่าองค์จริงของพระเกจิอาจารย์ชื่อดังต่างๆ ในไทย และรอยพระพุทธบาทจำลอง 12
+                                ราศี ชั้นที่ 3 ประดิษฐานพระพุทธรูปสำคัญองค์จำลองต่างๆ และชั้นที่ 4
+                                จะเป็นจุดชมวิวเมืองสวยๆ</p>
+                        </div>
+                    </article>
+                    <img class="img-fluid" src="image/info05.jpg" alt="ทุ่งปอเทือง">
+                    <article>
+                        <div>
+                            <h2>5. ทุ่งปอเทือง</h2>
+                            <p> ลมเย็นเริ่มมาเยือนแบบนี้ อยากจะชวนมาสัมผัสความงามเหลืองอร่ามใจกลางหุบเขา ณ
+                                ทุ่งดอกปอเทืองไร่ธรรมชัย จังหวัดนครสวรรค์
+                                อีกหนึ่งที่เที่ยวที่ได้รับความนิยมในช่วงหน้าหนาว
+                                เพราะทุ่งดอกปอเทืองสีเหลืองอร่ามบานสะพรั่งเต็มท้องทุ่ง สร้างบรรยากาศที่สดใสและโรแมนติก
+                                เหมาะสำหรับการไปพักผ่อนหย่อนใจและถ่ายรูปสวย ๆ</p>
+                        </div>
+                    </article>
+                    <img class="img-fluid" src="image/info09.jpg" alt="ฟาร์มแกะทหารช่าง">
+                    <article>
+                        <div>
+                            <h2>6. ฟาร์มแกะทหารช่าง</h2>
+                            <p>ที่เที่ยวถ่ายรูปสวยๆ ให้เราได้ตามเรามาเช็คอินกันได้ที่ ฟาร์มแกะทหารช่าง ค่ะ
+                                ที่นี่เป็นสถานที่ท่องเที่ยงเชิงเกษตร มีศูนย์การเรียนรู้เศรษฐกิจพอเพียง
+                                และยังมีจุดให้อาหารแกะ อีกด้วย รวมถึงกิจกรรมต่างๆ ที่เหมาะมาเที่ยวกันได้ทั้งครอบครัว
+                                ทางฟาร์มยังมีกิจกรรมเวิร์คช็อปงานศิลปะต่างๆ ให้คุณหนูๆ
+                                ได้ใช้เวลาว่างอย่างสร้างสรรค์ที่นี่</p>
+                        </div>
+                    </article>
+                    <img class="img-fluid" src="image/info10.jpg" alt="วัดเทพนิมิตทรงธรรม">
+                    <article>
+                        <div>
+                            <h2>7. วัดเทพนิมิตทรงธรรม</h2>
+                            <p>วัดเทพนิมิตทรงธรรม หรือที่เรียกว่า ถ้ำบ่อยา นั้นเป็นถ้ำสวยและวัดสวย
+                                ที่มีพระพุทธรูปประดิษฐานอยู่ภายในถ้ำมากมาย และยังมีเทวรูปอย่าง พระศิวะ พระแม่ลักษมีเทวี
+                                ปู่ฤาษี พระแม่อุมาเทวี พระแม่มหากาลี รวมถึงมีวัตถุโบราณต่างๆ เช่นกัน
+                                และยังได้ชื่อว่าเป็นถ้ำหินปูนที่สวยที่สุดของจังหวัดนครสวรรค์อีกด้วย</p>
+                        </div>
+                    </article>
+                    <img class="img-fluid" src="image/info11.jpg" alt="เป๋าตุงฟาร์ม">
+                    <article>
+                        <div>
+                            <h2>8. เป๋าตุงฟาร์ม</h2>
+                            <p>เป็นไร่เกษตรพืชผล ที่ตั้งอยู่บนพื้นที่ราบสูงราย ล้อมไปด้วยภูเขาสลับซับซ้อน
+                                อยู่ในพื้นที่ของ อำเภอตากฟ้า จังหวัดนครสวรรค์ โดยที่นี่จะมีการปลูกผลไม้เป็นหลักค่ะ
+                                ซึ่งช่วงฤดูหนาวของทุกปีจะมีการเปิดให้เข้าไปชม ทุ่งคอสมอส แบบไม่มีค่าใช้จ่ายใดๆ เลย
+                                ภาพตรงหน้าจะเป็นทุ่งคอสมอสสีชมพูกว้างใหญ่ อยู่บนเนินลดหลั่นกันลงมาอย่างสวยงาม
+                                ใครอยากได้รูปสวยๆ พลาดไม่ได้</p>
+                        </div>
+                    </article>
                 </div>
-            </article>
-            <img class="img-fluid" src="image/info02.jpg" alt="">
-            <article>    
-                <div>
-                <h2>2.พาสาน</h2>
-                    <p>พาสาน” มีที่มาจากคำว่า “ผสาน” คือ การรวมกัน แต่ “พาสาน” คือ
-                        การพาคนเข้าไปสานให้เกิดการผสมผสานกันระหว่าง คน สถานที่ และช่วงเวลา...</p>
-                </div>
-            </article>
-            <img class="img-fluid" src="image/info03.jpg" alt="">
-            <article>
-                <div>
-                    <h2>3.เขาหน่อ เขาแก้ว</h2>
-                    <p>ภูเขาหินปูนที่มีทิวทัศน์สวยงาม สถานที่ท่องเที่ยวนครสวรรค์ที่ต้องเช็คอินอีกหนึ่งแห่งของนครสวรรค์
-                        “เขาหน่อ”...</p>
-                </div>
-            </article>
-            <img class="img-fluid" src="image/info04.jpg" alt="">
-            <article>
-                <div>
-                    <h2>4.วัดคีรีวงศ์</h2>
-                    <p>สถานที่ท่องเที่ยวนครสวรรค์ที่แรกที่เราจะพาไปคือ วัดเก่าแก่ของจังหวัดนครสวรรค์
-                        ที่สร้างขึ้นตั้งแต่สมัยปลายกรุงสุโขทัย...</p>
-                </div>
-            </article>
-            <img class="img-fluid" src="image/info09.jpg" alt="">
-            <article>
-                <div>
-                    <h2>5.ทุ่งปอเทือง</h2>
-                    <p>หากใครไปเยือนนครสวรรค์ในช่วงปลายปีถึงต้นๆ ปี บอกเลยว่าพิกัดสถานที่ท่องเที่ยวนครสวรรค์
-                        ที่จะทำให้คุณได้ถ่ายรูปสวยๆ คือ ทุ่งดอกปอเทือง...</p>
-                </div>
-            </article>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p> จังหวัดนครสวรรค์ยินดีต้อนรับ หากติดต่อเรา <a>
+    <footer class="bg-light py-3 text-center">
+        <p>&copy; จังหวัดนครสวรรค์ยินดีต้อนรับ หากติดต่อเรา <a
                 href="mailto:66160011@go.buu.ac.th">66160011@go.buu.ac.th</a></p>
     </footer>
 
