@@ -10,15 +10,57 @@
     <style>
         body {
             font-family: 'Mali', cursive;
+            background-color: #fff4f7;
+            color: #ff69b4;
+        }
+
+        header {
+            background-color: #ffe6f0;
         }
 
         header h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
+            font-weight: bold;
+            color: #ff1493;
+        }
+
+        nav .nav-link {
+            color: #ff69b4;
+        }
+
+        nav .nav-link.active {
+            color: #ff1493;
             font-weight: bold;
         }
 
+        nav .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            color: #ff1493;
+        }
+
+        .card {
+            border: 2px solid #ffbee8;
+        }
+
+        .card-img-top {
+            border-bottom: 2px solid #ffbee8;
+        }
+
+        .card-title {
+            color: #ff1493;
+        }
+
+        footer {
+            background-color: #ffe6f0;
+            color: #ff69b4;
+        }
+
         footer a {
-            color: #f8bce0;
+            color: #ff1493;
+            text-decoration: none;
         }
 
         footer a:hover {
@@ -28,9 +70,9 @@
 </head>
 
 <body>
-    <header class="bg-light py-4 shadow-sm">
+    <header class="py-4 shadow-sm">
         <div class="container">
-            <h1 class="text-center text-primary">สถานที่ท่องเที่ยวจังหวัดนครสวรรค์</h1>
+            <h1 class="text-center">สถานที่ท่องเที่ยวจังหวัดนครสวรรค์</h1>
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,9 +80,9 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav mx-auto">
-                            <li class="nav-item"><a class="nav-link active text-primary fw-bold" href="index.html">หน้าหลัก</a></li>
-                            <li class="nav-item"><a class="nav-link text-primary" href="info.html">ข้อมูลท่องเที่ยวจังหวัด</a></li>
-                            <li class="nav-item"><a class="nav-link text-primary" href="contact.html">ติดต่อเรา</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="index.html">หน้าหลัก</a></li>
+                            <li class="nav-item"><a class="nav-link" href="info.html">ข้อมูลท่องเที่ยวจังหวัด</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">ติดต่อเรา</a></li>
                         </ul>
                     </div>
                 </div>
@@ -51,10 +93,9 @@
     <main class="container my-5">
         <section>
             <div class="text-center mb-5">
-                <h2 class="text-primary">ข้อมูลท่องเที่ยวจังหวัด</h2>
+                <h2>ข้อมูลท่องเที่ยวจังหวัด</h2>
             </div>
 
-            <!-- Card structure for each place -->
             <div class="row g-4">
                 <!-- บึงบอระเพ็ด -->
                 <div class="col-md-6 col-lg-4">
@@ -139,7 +180,7 @@
                         <img src="image/info11.jpg" class="card-img-top" alt="เป๋าตุงฟาร์ม">
                         <div class="card-body">
                             <h5 class="card-title">8. เป๋าตุงฟาร์ม</h5>
-                            <p class="card-text">เป็นไร่เกษตรพืชผลที่ตั้งอยู่บนพื้นที่ราบสูง ล้อมรอบด้วยภูเขาสลับซับซ้อนในพื้นที่อำเภอตากฟ้า จังหวัดนครสวรรค์</p>
+                            <p class="card-text">เป็นไร่เกษตรพืชผลที่ตั้งอยู่บนพื้นที่ราบสูง ล้อมรอบด้วยภูเขา และสามารถเรียนรู้การเกษตรพอเพียงได้ที่นี่</p>
                         </div>
                     </div>
                 </div>
@@ -147,7 +188,7 @@
         </section>
     </main>
 
-    <footer class="bg-light py-4">
+    <footer class="py-4">
         <div class="container text-center">
             <p class="mb-0">&copy; จังหวัดนครสวรรค์ยินดีต้อนรับ หากติดต่อเรา <a href="mailto:66160011@go.buu.ac.th">66160011@go.buu.ac.th</a></p>
         </div>
