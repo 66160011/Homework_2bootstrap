@@ -4,107 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hw2 travel</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>สถานที่ท่องเที่ยวจังหวัดนครสวรรค์</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <style>
-        /* ตั้งค่า font สำหรับ body */
         body {
             font-family: 'Mali', sans-serif;
-            background-color: #fce4ec; /* Light pink background */
-            margin: 0;
-            padding: 0;
+            background-color: #f8f9fa;
         }
 
-        /* Header styling */
         header {
-            background-color: #f48fb1; /* Soft pink header */
-            padding: 15px 0;
-        }
-
-        .navbar-brand img {
-            max-height: 50px;
-        }
-
-        .navbar-nav .nav-item {
-            margin-left: 20px;
-        }
-
-        .navbar-nav {
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* Search input and button styling */
-        .form-control {
-            border-radius: 20px;
-            padding: 10px;
-            border: 1px solid #f48fb1; /* Pink border for search */
-        }
-
-        button.btn {
-            border-radius: 20px;
-            background-color: #f48fb1; /* Button pink background */
-            color: white;
-            border: none;
-        }
-
-        button.btn:hover {
-            background-color: #f06292; /* Darker pink when hovered */
-        }
-
-        /* Main section styles */
-        main {
-            background-color: #ffffff; /* White background for content */
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .img-home,
-        .img-info,
-        .col {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .grid-info {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .text-light {
+            background-image: url('image/header-bg.jpg');
+            background-size: cover;
+            background-position: center;
             color: white;
         }
 
-        /* Footer styling */
+        header h1 {
+            font-weight: 500;
+        }
+
+        nav .nav-link {
+            color: white !important;
+            font-weight: 500;
+        }
+
+        nav .nav-link:hover {
+            color: #ffcc00 !important;
+        }
+
+        main h2 {
+            color: #007bff;
+            font-weight: bold;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
         footer {
-            background-color: #f48fb1; /* Soft pink footer */
-            padding: 20px 0;
-            text-align: center;
+            background-color: #343a40;
+            color: white;
         }
 
         footer a {
-            text-decoration: none;
-            color: white;
+            color: #ffcc00;
         }
 
         footer a:hover {
-            text-decoration: underline;
+            color: white;
         }
 
-        /* Mobile responsiveness */
-        @media (max-width: 767px) {
-            .navbar-nav {
-                text-align: center;
-            }
-            .form-control {
-                width: 100%;
-            }
-            .btn {
-                width: 100%;
-            }
+        .article-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+
+        .article-container img {
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .article-container h2 {
+            color: #007bff;
+        }
+
+        .article-container p {
+            color: #555;
+            line-height: 1.8;
         }
     </style>
 </head>
