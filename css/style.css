@@ -1,0 +1,95 @@
+/* ตั้งค่า font สำหรับ body */
+body {
+    font-family: 'Mali', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* ตั้งค่า background และ margin สำหรับ header */
+header {
+    background-color: #f8f9fa;
+    padding: 15px 0;
+}
+
+/* ปรับขนาด logo ใน header */
+.navbar-brand img {
+    height: 50px;
+}
+
+/* ทำให้ navbar ยืดหยุ่นและจัดตัวเองให้พอดีกับขนาดหน้าจอ */
+.navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* เพิ่มระยะห่างระหว่างแต่ละ link ใน navbar */
+.navbar-nav .nav-item {
+    margin-left: 20px;
+}
+
+/* ปรับแต่งปุ่ม search */
+.form-control {
+    border-radius: 20px;
+    padding: 10px;
+}
+
+button.btn {
+    border-radius: 20px;
+}
+
+/* สไตล์ให้กับ footer */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* ปรับให้ลิงค์ใน footer เป็นสีขาวและเมื่อมีการ hover จะมีเอฟเฟกต์ underline */
+footer a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* สไตล์ให้กับฟอร์ม */
+form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 10px;
+    padding: 10px;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+/* เพิ่มระยะห่างระหว่างแต่ละ field ในฟอร์ม */
+.mb-3 {
+    margin-bottom: 20px;
+}
+
+/* ปรับการแสดงผลให้สวยงามบนอุปกรณ์มือถือ */
+@media (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .form-control {
+        width: 100%;
+    }
+    .btn {
+        width: 100%;
+    }
+}
