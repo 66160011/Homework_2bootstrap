@@ -1,7 +1,7 @@
  /* ใช้ฟอนต์หลัก Mali */
     body {
         font-family: 'Mali', cursive;
-        background-color: #ffe4f1; /* พื้นหลังสีชมพูอ่อน */
+        background-color: #fff4f7; /* พื้นหลังสีชมพูอ่อน */
         color: #4d004d; /* สีข้อความเข้ม */
         margin: 0;
         padding: 0;
@@ -15,21 +15,29 @@
     }
 
     header h1 {
-        color: #ffffff;
-        font-size: 2.5rem;
+        font-size: 2.8rem;
+        font-weight: bold;
+        color: #ff1493;
         text-align: center;
         margin: 0;
     }
 
     /* Navbar */
     .navbar-light .navbar-nav .nav-link {
-        color: #000000;
+        color: #ff69b4;
         font-weight: bold;
+    }
+    .navbar-light .navbar-nav .nav-link.active {
+        color: #ff1493;
+        text-decoration: underline;
     }
 
     .navbar-light .navbar-nav .nav-link:hover {
-        color: #4d004d;
+        color: #ff1493;
         text-decoration: underline;
+    }
+    .navbar-brand img {
+        height: 50px; /* โลโก้ขนาดพอดี */
     }
 
     .navbar-toggler {
@@ -65,27 +73,30 @@
         background-color: #e63e6a; /* สีชมพูอ่อนลง */
     }
 
-    /* ฟอร์ม */
-    input, textarea {
-        border: 1px solid #ffb3c6; /* เส้นขอบสีชมพูอ่อน */
-        background-color: #fff5f9; /* พื้นหลังสีชมพูจาง */
-    }
+   /* ฟอร์ม */
+input, textarea {
+    border: 1px solid #ffb3c6; /* เส้นขอบสีชมพูอ่อน */
+    background-color: #fff5f9; /* พื้นหลังสีชมพูจาง */
+}
 
-    input:focus, textarea:focus {
-        border-color: #ff4d80; /* เส้นขอบชมพูเข้มเมื่อโฟกัส */
-        outline: none;
-        box-shadow: 0 0 5px rgba(255, 77, 128, 0.5);
-    }
+input:focus, textarea:focus {
+    border-color: #ff4d80; /* ขอบชมพูเข้ม */
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 77, 128, 0.5);
+}
 
     /* Cards */
     .card {
-        border: 1px solid #ffb3c6; /* เส้นขอบสีชมพูอ่อน */
-        background-color: #fff5f9; /* สีพื้นหลังการ์ด */
+        border: 2px solid #ffbee8; /* ขอบสีชมพูอ่อน */
+        background-color: #fff5f9; /* พื้นหลังสีชมพูจาง */
+        border-radius: 15px; /* ขอบมน */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงา */
     }
 
     .card-title {
-        color: #ff4d80; /* สีชมพูเข้ม */
+        color: #ff1493; /* สีชมพูสด */
         font-weight: bold;
+        font-size: 1.2rem;
     }
 
     .card-text {
@@ -94,7 +105,10 @@
 
     /* ปรับแต่งหัวข้อ */
     h2 {
-        color: #ff4d80; /* สีชมพู */
+        color: #ff1493; /* สีชมพูสด */
+        text-align: center;
+        font-size: 2.2rem;
+        margin-bottom: 30px;
     }
 
     /* ปรับแต่งเมนู */
@@ -155,23 +169,49 @@
     }
 
     .card-img-top {
-        border-bottom: 2px solid #ffbee8;
+        border-radius: 15px 15px 0 0; /* ขอบรูปด้านบนโค้งมน */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+        transition: transform 0.3s ease; /* เอฟเฟกต์เมื่อเมาส์ชี้ */
     }
+    .card-img-top:hover {
+        transform: scale(1.05); /* ขยายเล็กน้อย */
+    }
+    
 
     .card-title {
         color: #ff1493;
     }
 
     footer {
-        background-color: #ffe6f0;
-        color: #ff69b4;
+        background-color: #ffe6f0; /* สีชมพูอ่อน */
+        color: #ff69b4; /* ข้อความสีชมพู */
+        padding: 20px 0;
+        text-align: center;
+        margin-top: 50px;
     }
-
+    
     footer a {
         color: #ff1493;
+        font-weight: bold;
         text-decoration: none;
     }
-
+    
     footer a:hover {
         text-decoration: underline;
+    }
+    /* เอฟเฟกต์ปุ่ม */
+.btn-primary {
+    background-color: #ff4d80; /* สีชมพูสด */
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e63e6a; /* สีชมพูอ่อนลง */
+}
+    .img-fluid  {
+        border-radius: 15px; /* ทำให้ขอบโค้งมน */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+        width: 50px; /* ปรับให้รูปเต็มความกว้างของการ์ด */
+        height: auto; /* รักษาสัดส่วนของรูป */
     }
