@@ -5,38 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Nakhon Sawan</title>
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Mali:wght@200;300;400;500;600;700&display=swap"
         rel="stylesheet">
     <style>
         body {
             font-family: 'Mali', sans-serif;
+            background-color: #fdf2f8; /* สีชมพูอ่อน */
         }
 
-        .navbar-brand img {
-            height: 50px;
+        header {
+            background-color: #f8bbd0; /* สีชมพู */
+            padding: 15px 0;
         }
 
-        .form-group small {
-            display: block;
-            margin-top: 5px;
-            font-size: 0.9em;
-            color: #6c757d;
+        .navbar-nav .nav-link {
+            font-weight: 500;
+            color: #ffffff !important;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #fdf2f8 !important;
         }
 
         footer {
-            background-color: #f8f9fa;
+            background-color: #f8bbd0;
+            color: #ffffff;
             padding: 20px 0;
-            text-align: center;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        footer a:hover {
+            color: #ffe4f1;
+        }
+
+        .form-label {
+            font-weight: 500;
+        }
+
+        .btn-primary {
+            background-color: #ec407a;
+            border-color: #ec407a;
+        }
+
+        .btn-primary:hover {
+            background-color: #d81b60;
+            border-color: #d81b60;
         }
     </style>
 </head>
 
 <body>
+    <!-- Header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="image/DALL·E 2025-01-03 19.40.42.webp" alt="Logo" class="img-fluid" style="height: 50px;">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -52,33 +83,34 @@
         </nav>
     </header>
 
+    <!-- Main Content -->
     <main class="container py-5">
-        <section>
-            <h2 class="text-center mb-4">ส่งข้อความถึงเรา</h2>
+        <section class="shadow p-4 bg-white rounded">
+            <h2 class="text-center mb-4 text-danger">ส่งข้อความถึงเรา</h2>
             <form action="/submit" method="POST" role="form" aria-label="แบบฟอร์มติดต่อ">
                 <div class="mb-3">
                     <label for="fullname" class="form-label">ชื่อ-นามสกุล *</label>
                     <input type="text" id="fullname" name="fullname" class="form-control" required
                         aria-required="true" minlength="2" maxlength="100" aria-describedby="fullname-help">
-                    <small id="fullname-help">กรุณากรอกชื่อและนามสกุลจริง</small>
+                    <small id="fullname-help" class="text-muted">กรุณากรอกชื่อและนามสกุลจริง</small>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">อีเมล *</label>
                     <input type="email" id="email" name="email" class="form-control" required aria-required="true"
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" aria-describedby="email-help">
-                    <small id="email-help">ตัวอย่าง: example@domain.com</small>
+                    <small id="email-help" class="text-muted">ตัวอย่าง: example@domain.com</small>
                 </div>
                 <div class="mb-3">
                     <label for="tel" class="form-label">เบอร์โทรศัพท์</label>
                     <input type="tel" id="tel" name="tel" class="form-control" pattern="[0-9]{10}"
                         aria-describedby="tel-help">
-                    <small id="tel-help">กรอกหมายเลข 10 หลัก ไม่ต้องมีขีด เช่น 0812345678</small>
+                    <small id="tel-help" class="text-muted">กรอกหมายเลข 10 หลัก ไม่ต้องมีขีด เช่น 0812345678</small>
                 </div>
                 <div class="mb-3">
                     <label for="message" class="form-label">ข้อความ *</label>
                     <textarea id="message" name="message" class="form-control" required aria-required="true"
                         minlength="10" rows="5" aria-describedby="message-help"></textarea>
-                    <small id="message-help">กรุณากรอกข้อความอย่างน้อย 10 ตัวอักษร</small>
+                    <small id="message-help" class="text-muted">กรุณากรอกข้อความอย่างน้อย 10 ตัวอักษร</small>
                 </div>
                 <div class="d-grid">
                     <button type="submit" class="btn btn-primary" aria-label="ส่งข้อความ">ส่งข้อความ</button>
@@ -87,9 +119,10 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer role="contentinfo">
         <div class="container">
-            <p>&copy; จังหวัดนครสวรรค์ยินดีต้อนรับ หากติดต่อเรา <a href="mailto:66160011@go.buu.ac.th">66160011@go.buu.ac.th</a> สงวนลิขสิทธิ์.</p>
+            <p>&copy; 2025 จังหวัดนครสวรรค์ยินดีต้อนรับ <br> ติดต่อเรา <a href="mailto:66160011@go.buu.ac.th">66160011@go.buu.ac.th</a></p>
         </div>
     </footer>
 
