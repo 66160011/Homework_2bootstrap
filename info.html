@@ -8,15 +8,96 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        body {
+            font-family: 'Mali', sans-serif;
+            background-color: #fce4ec; /* Light pink background */
+        }
+
+        header {
+            background-color: #f48fb1; /* Soft pink background */
+            padding: 20px 0;
+        }
+
+        h1 {
+            color: white;
+            font-size: 36px;
+            font-weight: 600;
+        }
+
+        nav .navbar-nav .nav-link {
+            font-size: 18px;
+            font-weight: 500;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        nav .navbar-nav .nav-link:hover {
+            color: #f06292; /* Hover effect */
+        }
+
+        .navbar-toggler-icon {
+            background-color: #f48fb1; /* Pink burger icon */
+        }
+
+        .main-content h2 {
+            font-size: 28px;
+            font-weight: 500;
+            color: #f48fb1;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #f48fb1;
+            padding: 20px;
+            color: white;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #f06292; /* Hover effect */
+        }
+
+        .img-fluid {
+            border-radius: 8px; /* Rounded corners for images */
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 767px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+
+            .main-content h2 {
+                font-size: 24px;
+            }
+
+            footer {
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <header class="bg-light py-3">
+
+    <header>
         <div class="container">
             <h1 class="text-center">สถานที่ท่องเที่ยวจังหวัดนครสวรรค์</h1>
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
@@ -38,7 +119,7 @@
     </header>
 
     <main class="container py-4">
-        <section>
+        <section class="main-content">
             <div class="text-center mb-4">
                 <h2>ข้อมูลท่องเที่ยวจังหวัด</h2>
             </div>
@@ -48,7 +129,7 @@
                 </div>
                 <div class="col-md-6">
                     <h2>1.บึงบอระเพ็ด</h2>
-                    <p>สถานที่ท่องเที่ยวนครสวรรค์ชื่อดังที่พลาดไม่ได้ บึงบอระเพ็ด เป็นบึงทะเลสาบน้ำจืดที่ใหญ่ที่สุดในประเทศไทย ครอบคลุมพื้นที่ 3 อำเภอในนครสวรรค์...</p>
+                    <p>สถานที่ท่องเที่ยวนครสวรรค์ชื่อดังที่พลาดไม่ได้ บึงบอระเพ็ด เป็นบึงทะเลสาบน้ำจืดที่ใหญ่ที่สุดในประเทศไทย...</p>
                 </div>
             </div>
             <div class="row">
@@ -90,7 +171,7 @@
         </section>
     </main>
 
-    <footer class="bg-light py-3 text-center">
+    <footer>
         <p>&copy; จังหวัดนครสวรรค์ยินดีต้อนรับ หากติดต่อเรา <a href="mailto:66160011@go.buu.ac.th">66160011@go.buu.ac.th</a></p>
     </footer>
 

@@ -5,86 +5,113 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fce4ec; /* Light pink background */
+    color: #333; /* Dark text for better readability */
 }
 
 /* ตั้งค่า background และ margin สำหรับ header */
 header {
     background-color: #f48fb1; /* Soft pink for header background */
-    padding: 15px 0;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
 }
 
 /* ปรับขนาด logo ใน header */
 .navbar-brand img {
     height: 50px;
+    width: auto; /* Ensure logo maintains its aspect ratio */
 }
 
 /* ทำให้ navbar ยืดหยุ่นและจัดตัวเองให้พอดีกับขนาดหน้าจอ */
 .navbar-nav {
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    justify-content: center; /* Align navbar items center */
 }
 
 /* เพิ่มระยะห่างระหว่างแต่ละ link ใน navbar */
 .navbar-nav .nav-item {
     margin-left: 20px;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.navbar-nav .nav-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
 }
 
 /* ปรับแต่งปุ่ม search */
 .form-control {
-    border-radius: 20px;
-    padding: 10px;
+    border-radius: 25px; /* More rounded border for input fields */
+    padding: 12px;
     border: 1px solid #f48fb1; /* Soft pink border for search */
+    transition: border-color 0.3s ease; /* Smooth border color change */
+}
+
+.form-control:focus {
+    border-color: #f06292; /* Darker pink border when focused */
+    box-shadow: 0 0 5px rgba(240, 98, 146, 0.6); /* Subtle shadow when focused */
 }
 
 button.btn {
-    border-radius: 20px;
+    border-radius: 25px; /* More rounded button */
     background-color: #f48fb1; /* Button pink background */
     color: white;
     border: none;
+    padding: 12px 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Button hover transition */
 }
 
 button.btn:hover {
     background-color: #f06292; /* Darker pink when hovered */
+    transform: translateY(-2px); /* Slight lift effect */
 }
 
 /* สไตล์ให้กับ footer */
 footer {
     background-color: #f48fb1; /* Soft pink footer */
-    padding: 20px 0;
+    padding: 30px 0;
     text-align: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow on top */
 }
 
 footer a {
     text-decoration: none;
     color: white; /* White text for links */
+    font-weight: bold; /* Bold links for emphasis */
+    transition: text-decoration 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
 footer a:hover {
     text-decoration: underline;
+    color: #f06292; /* Change link color on hover */
 }
 
 /* สไตล์ให้กับฟอร์ม */
 form {
     background-color: #ffffff; /* White background for the form */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Limit the form width */
+    margin: 20px auto; /* Center the form */
 }
 
 /* ปรับให้ .form-label ใช้สีชมพู */
 .form-label {
     font-weight: bold;
     color: #f48fb1; /* Pink label text */
+    margin-bottom: 8px; /* Add some space between label and input */
 }
 
 .form-control {
     border-radius: 10px;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #f48fb1; /* Soft pink border for input fields */
 }
 
 textarea.form-control {
     resize: vertical;
+    min-height: 100px;
 }
 
 /* เพิ่มระยะห่างระหว่างแต่ละ field ในฟอร์ม */
@@ -96,11 +123,14 @@ textarea.form-control {
 @media (max-width: 767px) {
     .navbar-nav {
         text-align: center;
+        width: 100%;
+        margin-top: 15px;
     }
     .form-control {
         width: 100%;
     }
     .btn {
         width: 100%;
+        padding: 12px; /* Adjust button size */
     }
 }
