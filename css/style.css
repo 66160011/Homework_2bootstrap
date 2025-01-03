@@ -4,11 +4,12 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #fce4ec; /* Light pink background */
 }
 
 /* ตั้งค่า background และ margin สำหรับ header */
 header {
-    background-color: #f8f9fa;
+    background-color: #f48fb1; /* Soft pink for header background */
     padding: 15px 0;
 }
 
@@ -32,23 +33,30 @@ header {
 .form-control {
     border-radius: 20px;
     padding: 10px;
+    border: 1px solid #f48fb1; /* Soft pink border for search */
 }
 
 button.btn {
     border-radius: 20px;
+    background-color: #f48fb1; /* Button pink background */
+    color: white;
+    border: none;
+}
+
+button.btn:hover {
+    background-color: #f06292; /* Darker pink when hovered */
 }
 
 /* สไตล์ให้กับ footer */
 footer {
-    background-color: #f8f9fa;
+    background-color: #f48fb1; /* Soft pink footer */
     padding: 20px 0;
     text-align: center;
 }
 
-/* ปรับให้ลิงค์ใน footer เป็นสีขาวและเมื่อมีการ hover จะมีเอฟเฟกต์ underline */
 footer a {
     text-decoration: none;
-    color: #007bff;
+    color: white; /* White text for links */
 }
 
 footer a:hover {
@@ -57,19 +65,22 @@ footer a:hover {
 
 /* สไตล์ให้กับฟอร์ม */
 form {
-    background-color: #f8f9fa;
+    background-color: #ffffff; /* White background for the form */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* ปรับให้ .form-label ใช้สีชมพู */
 .form-label {
     font-weight: bold;
+    color: #f48fb1; /* Pink label text */
 }
 
 .form-control {
     border-radius: 10px;
     padding: 10px;
+    border: 1px solid #f48fb1; /* Soft pink border for input fields */
 }
 
 textarea.form-control {
