@@ -1,1 +1,72 @@
 # Homework_2bootstrap
+
+## command in hw2
+- git checkout -b develop
+- git add .
+- git commit -m "สร้างโครงสร้างโปรเจค"
+- git add .
+- git commit -m "coppy index hw1"
+- git add .
+- git commit -m "coppy info hw1"
+- git add .
+- git commit -m "coppy contact hw1"
+- git add .
+- git commit -m "image"
+- git add .
+- git commit -m "เนื้อหา info"
+- git add .
+- git commit -m "ค้นหา"
+- git add .
+- git commit -m "แก้ไข info"
+- git add .
+- git commit -m "เพิ่มรูป index"
+- git add .
+- git commit -m "เพ่ิ่มโลโก้"
+- git add .
+- git commit -m "เพิ่ม bootindex"
+- git add .
+- git commit -m "เพิ่ม bootinfo"
+- git add .
+- git commit -m "เพิ่ม bootcontact"
+- git add .
+- git commit -m "style"
+- git add .
+- git commit -m "แก้ไขindex"
+- git add .
+- git commit -m "แก้ไขbootindex"
+- git add .
+- git commit -m "แก้ไขใส่สถานที่ท่องเที่ยว"
+- git add .
+- git commit -m "แก้ไขstyle"
+- git commit -m "เพิ่ม hw2"
+- git commit -m "แก้ไขตกแต่งindex"
+- git add .
+- git commit -m "แก้ไขตกแต่งin-st"
+- git add .
+- git commit -m "แก้ไขตกแต่งst"
+- git add .
+- git commit -m "แก้ไขหน้า info"
+- git add .
+- git commit -m "แก้ info"
+- git add .
+- git commit -m "แก้ไขทัง้หมด"
+- git add .
+- git commit -m "แก้ไขตกแต่งindex"
+- git add .
+- git commit -m "แก้ไขตกแต่งcontact"
+- git add .
+- git commit -m "แก้ info"
+- git add .
+- git commit -m "แก้ info"
+- git add .
+- git commit -m "แก้ info"
+- git add .
+- git commit -m "แก้ไขตกแต่งindex"
+- git add .
+- git commit -m "แก้ไขทัง้หมด"
+- git add .
+- git commit -m "แก้ไขตกแต่งindex"
+- git add .
+- git commit -m "แก้ไขทัง้หมด"
+- git add .
+- git commit -m "แก้ไขทัง้หมด"
