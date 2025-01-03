@@ -5,21 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hw1 travel</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Mali', sans-serif;
+        }
+        .img-home, .img-info, .col {
+            max-width: 100%;
+            height: auto;
+        }
+        .grid-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
+    <header class="bg-primary text-white py-3">
         <div class="container">
-            <h1>สถานที่ท่องเที่ยวจังหวัดนครสวรรค์</h1>
-            <div class="search-container">
-                <input type="text" class="search-box" id="searchInput" placeholder="Search...">
-                <button class="search-button" onclick="performSearch()">Search</button>
+            <h1 class="text-center">สถานที่ท่องเที่ยวจังหวัดนครสวรรค์</h1>
+            <div class="d-flex justify-content-center my-3">
+                <input type="text" class="form-control w-50" id="searchInput" placeholder="Search...">
+                <button class="btn btn-light ms-2" onclick="performSearch()">Search</button>
             </div>
-        
+
             <script>
                 function performSearch() {
                     const query = document.getElementById('searchInput').value;
@@ -32,47 +44,71 @@
                     }
                 }
             </script>
-            <div class="header-home">
-                <nav class="menu" aria-label="เมนูนำทางหลัก">
-                    <button class="menu-toggle" aria-label="เปิดเมนู">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </button>
-                    <div class="title">
-                        <li><a href="index.html">หน้าหลัก</a></li>
-                        <li><a href="info.html">ข้อมูลท่องเที่ยวจังหวัด</a></li>
-                        <li><a href="contact.html">ติดต่อเรา</a></li>
-                    </div>
-                </nav>
-            </div>
-    </header>
-<img class="img-home" src="image/สถานที่ท่องเที่ยว.png" alt="">
-<main>
-    <p>นครสวรรค์ จังหวัดทางตอนล่างของภาคเหนือที่ใหญ่รองลงมาจากเชียงใหม่ ที่นี่เป็นเมืองที่รู้จักในนาม
-        “เมืองปากน้ำโพ” ซึ่งมาจากบริเวณที่แม่น้ำปิงและน่านมาบรรจบกัน อันเป็นต้นแม่น้ำเจ้าพระยานั่นเอง นครสวรรค์
-        แม้จะเป็นจังหวัดทางภาคเหนือที่ไม่ค่อยได้รับความนิยมในการมาท่องเที่ยวเท่าไหร่นัก แต่คุณรู้หรือไม่ว่าที่นี่
-        มีสถานที่ท่องเที่ยวที่น่าสนใจหลายแห่งที่เหมาะแก่การมาเที่ยวชม </p>
-    <section>
-            <div class="grid-info">
 
-                <div class="home-img-con">
-                    <img class="img-info" src="image/info06.jpg" alt="">
-                    <img class="img-info" src="image/info07.jpg" alt="">
-                    <img class="img-info" src="image/info08.jpg" alt="">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">หน้าหลัก</a></li>
+                            <li class="nav-item"><a class="nav-link" href="info.html">ข้อมูลท่องเที่ยวจังหวัด</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">ติดต่อเรา</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container my-4">
+        <img class="img-fluid mb-4" src="image/สถานที่ท่องเที่ยว.png" alt="">
+
+        <p>นครสวรรค์ จังหวัดทางตอนล่างของภาคเหนือที่ใหญ่รองลงมาจากเชียงใหม่ ที่นี่เป็นเมืองที่รู้จักในนาม
+            “เมืองปากน้ำโพ” ซึ่งมาจากบริเวณที่แม่น้ำปิงและน่านมาบรรจบกัน อันเป็นต้นแม่น้ำเจ้าพระยานั่นเอง นครสวรรค์
+            แม้จะเป็นจังหวัดทางภาคเหนือที่ไม่ค่อยได้รับความนิยมในการมาท่องเที่ยวเท่าไหร่นัก แต่คุณรู้หรือไม่ว่าที่นี่
+            มีสถานที่ท่องเที่ยวที่น่าสนใจหลายแห่งที่เหมาะแก่การมาเที่ยวชม </p>
+
+        <section class="mt-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <img class="img-fluid" src="image/info06.jpg" alt="">
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <img class="img-fluid" src="image/info07.jpg" alt="">
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <img class="img-fluid" src="image/info08.jpg" alt="">
                 </div>
             </div>
-            <div>
+
+            <div class="mt-3">
                 <p>บึงบอระเพ็ด เป็นบึงน้ำจืดซึ่งเกิดขึ้นตามธรรมชาติ ในอดีตได้ชื่อว่าเป็น ทะเลเหนือ หรือ จอมบึง
                     เพราะมีสัตว์และพันธุ์พืชน้ำอยู่มากมาย มีความอุดมสมบูรณ์
                     และเป็นบึงทะเลสาบน้ำจืดขนาดใหญ่ที่สุดในประเทศไทย มีจระเข้ที่สามารถดูอย่างใกล้ชิดในธรรมชาติ ซึ่ง
                     ได้ประกาศเป็นเขตห้ามล่าสัตว์ป่า และอยู่ในความดูแลของกองอนุรักษ์สัตว์ป่า</p>
             </div>
-    </section>
-    <img class="col" src="image/info09.jpg" alt="">
-    <img class="col" src="image/info10.jpg" alt="">
-    <img class="col" src="image/info11.jpg" alt="">
-</main>
+        </section>
+
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <img class="img-fluid" src="image/info09.jpg" alt="">
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid" src="image/info10.jpg" alt="">
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid" src="image/info11.jpg" alt="">
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; จังหวัดนครสวรรค์ยินดีต้อนรับ หากติดต่อเรา <a class="text-decoration-none text-light" href="mailto:66160011@go.buu.ac.th">66160011@go.buu.ac.th</a>. สงวนลิขสิทธิ์.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
